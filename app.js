@@ -10,10 +10,14 @@ const slider = () => {
   sliderBtnOne.addEventListener("click", (e) => {
     heroHeading.textContent = "Get relief from Erectile Dysfunction today!";
     subHeading.innerHTML = `
-      <li>Treatments starting at <strong>1 cent/dose</strong></li>
-      <li>100% online and discreet delivery</li>
-      <li>Free expert consultation</li>
-      <li>Judgment - free care</li>
+    <div class="hero-sub-one">
+    <li>Perform better at <strong>1 cent/dose</strong></li>
+    <li>Last as long as a Pornstar</li>
+  </div>
+  <div class="hero-sub-two">
+    <li>100% online and discreet delivery</li>
+    <li>Free expert consultation</li>
+  </div>
       `;
     bannerImage.src = "/assets/Banner.png";
     activeSlide = true;
@@ -24,9 +28,13 @@ const slider = () => {
   sliderBtnTwo.addEventListener("click", (e) => {
     heroHeading.textContent = "Pain relief when you need it.";
     subHeading.innerHTML = `
+      <div class="hero-sub-one">
       <li>Buy effective pain relief medications from us</li>
       <li>Become pain-free</li>
+      </div>
+      <div class="hero-sub-two">
       <li>Successfully treats muscular spasms</li>
+      </div>
       `;
     bannerImage.src = "/assets/pain_banner.png";
     activeSlide = false;

@@ -55,7 +55,7 @@ a{
 
 header{
   background-color: var(--p-color);
-  height: 90vh;
+  min-height: 99vh;
   border-bottom-left-radius: 55px;
   border-bottom-right-radius: 55px;
   color: white;
@@ -96,8 +96,8 @@ nav{
 }
 
 .slider-buttons{
-  width: 80px;
-  height: 20px;
+  width: 65px;
+  height: 15px;
   background: rgba(255, 255, 255, 0.5);
   position: absolute;
   bottom: 1%;
@@ -118,8 +118,8 @@ nav{
 }
 
 .slider-button-one, .slider-button-two{
-  width: 15px;
-  height: 15px;
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
   background: white;
   margin: 0.2rem 0.2rem;
@@ -130,6 +130,12 @@ nav{
 .active-button{
   background: white;
   opacity: 1;
+}
+
+@media(max-width: 768px){
+  .slider-buttons{
+    bottom: 0.25%;
+  }
 }
 
 @media(max-width: 425px){
@@ -188,7 +194,7 @@ nav{
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 80%;
+  min-height: 100%;
   margin: 1rem var(--sides);
   position: relative;
 }
@@ -205,18 +211,23 @@ nav{
 .hero-heading{
   font-size: 7rem;
   font-size: calc(1rem + 1vw);
+  text-align: center;
 }
 
 .hero-sub-heading{
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin: 0.8rem 0rem;
   margin-bottom: 1.8rem;
-  margin-left: 2.2rem;
+  /* margin-left: 2.2rem; */
   display: flex;
+  justify-content: center;
+  list-style: none;
+  text-align: center;
 }
 
 .hero-sub-two{
-  margin-left: 5rem;
+  margin-top: 0.5rem;
+  margin-left: 3rem;
 }
 
 
@@ -257,19 +268,35 @@ nav{
 
 .hero-form .consult-form{
   width: 100%;
-  margin: 0rem;
+  margin: 0rem auto;
+  padding: 1rem;
 }
 
+.hero-form .consult-form .form-label{
+  color: rgb(82, 82, 82);
+  font-size: 1.5rem;
+}
+
+.hero-form .consult-form .form-input{
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.hero-form .consult-form .submit-button{
+  font-size: 1.5rem;
+}
+
+
 @media(max-width: 1024px){
-  .hero-heading{
-    font-size: calc(2.5rem + 1vw);
-  }
+  /* .hero-heading{
+    font-size: calc(1rem + 1vw);
+  } */
 
   .hero-sub-heading{
-    font-size: 1.3rem;
+    font-size: 0.85rem;
     margin: 0.8rem 0rem;
     margin-bottom: 1.8rem;
-    margin-left: 1.5rem;
+    /* margin-left: 1.5rem; */
   }
 
   .hero-image-container img{
@@ -280,6 +307,17 @@ nav{
   .hero-button{
     font-size: 1.5rem;
   }
+}
+
+@media(max-width: 768px){
+  .hero-section{
+    flex-direction: column;
+  }
+
+  .hero-content{
+    padding: 0.5rem;
+  }
+
 }
 
 @media(max-width: 425px){
@@ -301,13 +339,6 @@ nav{
     margin-left: 1.5rem;
   }
 
-  .hero-image-container{
-    position: absolute;
-    z-index: -1;
-    opacity: 0.5;
-    bottom: 0%;
-    right: 0%;
-  }
 
   .hero-button{
     font-size: 1rem;
