@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link
+      rel="shortcut icon"
+      href="/assets/Blue icon.png"
+      type="image/x-icon"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -10,136 +15,508 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="/styles.css" />
-    <title>US Pharmacy</title>
+    <!-- This code goes in <head> tag of your site -->
+    <script type="text/javascript">
+      var _mpevt = _mpevt || [];
+      (function () {
+        var u =
+          "https:" == document.location.protocol
+            ? "https://static.trafficjunky.com/js/mp.min.js"
+            : "http://static.trafficjunky.com/js/mp.min.js";
+        var d = document,
+          g = d.createElement("script"),
+          s = d.getElementsByTagName("script")[0];
+        g.type = "text/javascript";
+        g.defer = true;
+        g.async = true;
+        g.src = u;
+        s.parentNode.insertBefore(g, s);
+      })();
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-VPHRGWBVVG"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-VPHRGWBVVG");
+    </script>
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js"
+      );
+      fbq("init", "335702368765867");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=335702368765867&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+    <title>USPharmacy</title>
   </head>
   <body>
-    <header>
+    <header data-aos="fade-down" data-aos-duration="1200">
+      <div class="offer-message">
+        Treatment starting at <strong>1 cent/pill</strong>
+      </div>
       <nav>
         <div>
-          <p class="brand-logo">USPHARMACY</p>
+          <img src="/assets/White Logo1.png" class="brand-logo" />
         </div>
         <div class="nav-links">
           <ul>
-            <li><a href="#">LINK</a></li>
-            <li><a href="#">LINK</a></li>
-            <li><a href="#">LINK</a></li>
-            <li><a href="#">LINK</a></li>
+            <li><a href="#medicines">Medicines</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </nav>
       <div class="hero-section">
         <div class="hero-content">
           <h2 class="hero-heading">
-            SOME GOOD <br />
-            HEADLINE HERE
+            Enjoy the Best Sex of Your Life and Finish Like a Porn Star,
+            Guaranteed!
           </h2>
-          <p class="hero-sub-heading">SUB HEADING HERE</p>
-          <a class="hero-button" href="#">CONSULT NOW</a>
+
+          <ul class="hero-sub-heading">
+            <li>Perform better at <strong>1 cent/dose</strong></li>
+            <li>Last as long as a Pornstar</li>
+            <li>100% online and discreet delivery</li>
+            <li>Free expert consultation</li>
+          </ul>
+
+          <a class="hero-button" href="#contact">CONSULT NOW</a>
         </div>
         <div class="hero-image-container">
-          <img src="/assets/doctor.png" alt="doctor image" />
+          <img src="/assets/Banner.png" alt="doctor image" />
         </div>
       </div>
+
+      <div class="slider-buttons">
+        <div class="slider-button-one active-button"></div>
+        <div class="slider-button-two"></div>
+      </div>
     </header>
+
     <main>
       <section class="info-section">
-        <h3 class="heading">AROUND 52% MEN SUFFER FROM ED</h3>
-        <p class="sub-heading">YOU ARE NOT ALONE & IT’S NOT OVER FOR YOU</p>
+        <h3
+          class="heading info-section-heading"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+        >
+          It's more common than you think
+        </h3>
+        <p
+          class="sub-heading info-section-sub-heading"
+          data-aos="fade-up"
+          data-aos-anchor-placement="top-bottom"
+        >
+          Around 52% of men suffer from erectile dysfunction
+        </p>
 
         <div class="info-box">
-          <div class="info-content">
-            <h3 class="heading info-heading">WHAT IS ED?</h3>
+          <div
+            class="info-content"
+            data-aos="fade-right"
+            data-aos-duration="800"
+          >
+            <h3 class="heading info-heading">
+              No PRESCRIPTION Plus Easy Delivery
+            </h3>
             <p class="info">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et
-              turpis convallis, tristique odio eu, dignissim lectus. Nullam a
-              sollicitudin lacus. Duis eros nisi, maximus ac porttitor ac,
-              fringilla sed mauris.
+              Fill out the form and our sex expert team will contact you to
+              ensure safe and discreet delivery.
             </p>
           </div>
-          <div class="info-image">
+          <div class="info-image" data-aos="fade-left">
             <img src="/assets/sad-man.png" alt="sad man suffering from ed" />
           </div>
         </div>
 
         <div class="info-box">
-          <div class="info-content">
-            <h3 class="heading info-heading">WHAT IS ED?</h3>
+          <div
+            class="info-content"
+            data-aos="fade-left"
+            data-aos-duration="800"
+          >
+            <h3 class="heading info-heading">
+              Want to have sex like the last porn you watched?
+            </h3>
             <p class="info">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et
-              turpis convallis, tristique odio eu, dignissim lectus. Nullam a
-              sollicitudin lacus. Duis eros nisi, maximus ac porttitor ac,
-              fringilla sed mauris.
+              Our Sildenafil(Viagra) pills enhance that quick build-up in your
+              system to measurably improve your sexual performance. We worked
+              with our expert medical advisors to determine which performance
+              enhancement to offer through our platform.
             </p>
           </div>
-          <div class="info-image">
+          <div class="info-image" data-aos="fade-right">
             <img src="/assets/sad-man-2.png" alt="sad man suffering from ed" />
           </div>
         </div>
 
         <div class="info-box">
-          <div class="info-content">
-            <h3 class="heading info-heading">WHAT IS ED?</h3>
+          <div
+            class="info-content"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+          >
+            <h3 class="heading info-heading">Make her go crazy</h3>
             <p class="info">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et
-              turpis convallis, tristique odio eu, dignissim lectus. Nullam a
-              sollicitudin lacus. Duis eros nisi, maximus ac porttitor ac,
-              fringilla sed mauris.
+              During sexual intercourse, most men ejaculate between 5-10 minutes
+              and research has shown the average time to ejaculate after
+              penetration is 5 1/2 minutes. After taking our Sildenafil(Viagra)
+              pills our consumers have lasted up to 90 minutes.
             </p>
           </div>
-          <div class="info-image">
-            <img src="/assets/sad-man.png" alt="sad man suffering from ed" />
+          <div class="info-image" data-aos="fade-left">
+            <img src="/assets/happy-man.png" alt="sad man suffering from ed" />
           </div>
         </div>
       </section>
 
-      <section class="pills-section">
-        <h3 class="heading">PILLS WE HAVE FOR YOU</h3>
-        <p class="sub-heading">SOME DESCRIPTIVE TEXT</p>
+      <section class="pills-section" id="medicines">
+        <h3 class="heading" data-aos="fade-up">Medications we provide</h3>
+        <!-- <p class="sub-heading">SOME DESCRIPTIVE TEXT</p> -->
 
         <div class="pill-cards">
-          <div class="pill-card">
-            <p class="pill-name">MEDICINE</p>
-            <img class="pill-image" src="/assets/med.png" alt="medicine" />
-            <a class="pill-cta" href="#">CONSULT NOW</a>
+          <div class="pill-card" data-aos="flip-left">
+            <p class="pill-name">Sildenafil (Viagra)</p>
+            <img
+              class="pill-image"
+              src="/assets/pill-image.png"
+              alt="medicine"
+            />
+            <a class="pill-cta" href="#contact">ORDER NOW</a>
           </div>
 
-          <div class="pill-card">
-            <p class="pill-name">MEDICINE</p>
-            <img class="pill-image" src="/assets/med.png" alt="medicine" />
-            <a class="pill-cta" href="#">CONSULT NOW</a>
+          <div class="pill-card" data-aos="flip-right">
+            <p class="pill-name">Vardenafil (Levitra)</p>
+            <img
+              class="pill-image"
+              src="/assets/levitra-brand.png"
+              alt="medicine"
+            />
+            <a class="pill-cta" href="#contact">ORDER NOW</a>
           </div>
 
-          <div class="pill-card">
-            <p class="pill-name">MEDICINE</p>
-            <img class="pill-image" src="/assets/med.png" alt="medicine" />
-            <a class="pill-cta" href="#">CONSULT NOW</a>
+          <div class="pill-card" data-aos="flip-left">
+            <p class="pill-name">Tadalafil (Cialis)</p>
+            <img
+              class="pill-image"
+              src="/assets/cialis-brand.png"
+              alt="medicine"
+            />
+            <a class="pill-cta" href="#contact">ORDER NOW</a>
           </div>
 
-          <div class="pill-card">
-            <p class="pill-name">MEDICINE</p>
-            <img class="pill-image" src="/assets/med.png" alt="medicine" />
-            <a class="pill-cta" href="#">CONSULT NOW</a>
+          <div class="pill-card" data-aos="flip-right">
+            <p class="pill-name">Soma</p>
+            <img
+              class="pill-image"
+              src="/assets/White pill.png"
+              alt="medicine"
+            />
+            <a class="pill-cta" href="#contact">ORDER NOW</a>
+          </div>
+
+          <div class="pill-card" data-aos="flip-left">
+            <p class="pill-name">Tramadol</p>
+            <img
+              class="pill-image"
+              src="/assets/White pill.png"
+              alt="medicine"
+            />
+            <a class="pill-cta" href="#contact">ORDER NOW</a>
           </div>
         </div>
       </section>
 
       <section class="painkiller-section">
-        <div class="painkiller-image-container">
+        <div class="painkiller-image-container" data-aos="fade-right">
           <img src="/assets/pain.png" alt="" />
         </div>
-        <div class="painkiller-content">
-          <h3 class="heading painkiller-heading">PAINKILLER HEADLINE</h3>
+        <div class="painkiller-content" data-aos="fade-left">
+          <h3 class="heading painkiller-heading">
+            Require pain relief medications?
+          </h3>
           <p class="painkiller-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et
-            turpis convallis, tristique odio eu, dignissim lectus. Nullam a
-            sollicitudin lacus. Duis eros nisi, maximus ac porttitor ac,
-            fringilla sed mauris.
+            We also provide medication prescribed for the treatment of relief of
+            discomfort associated with acute painful muscle and skeletal
+            conditions in adults. It acts in the central nervous system (CNS) to
+            relieve pain.
           </p>
         </div>
       </section>
 
-      <section class="process-section"></section>
+      <section class="process-section">
+        <h3 class="heading" data-aos="fade-up">Wondering how to order?</h3>
+        <p class="sub-heading" data-aos="fade-up">
+          We follow a quick and simple three-step process
+        </p>
+
+        <div class="process-list">
+          <div class="process-card" data-aos="flip-left">
+            <img src="/assets/form.png" alt="" />
+            <p>Fill out the <a href="#contact">consultation form</a></p>
+          </div>
+
+          <div class="process-card" data-aos="flip-right">
+            <img src="/assets/customer-service.png" alt="" />
+            <p>Private consultation with our sex expert</p>
+          </div>
+
+          <div class="process-card" data-aos="flip-left">
+            <img src="/assets/shipping-icon.png" alt="" />
+            <p>Discreet delivery to your home</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq-section" id="faq">
+        <div class="faq-section-heading" data-aos="fade-right">
+          <h3 class="heading faq-heading">
+            FREQUENTLY <br />
+            ASKED <br />
+            QUESTIONS
+          </h3>
+        </div>
+
+        <div class="faqs" data-aos="fade-left">
+          <div class="faq">
+            <div class="faq-question">
+              <p>How do I contact your company?</p>
+              <span>-</span>
+            </div>
+            <div class="faq-answer">
+              <p>
+                You can fill out the consultation form and expect a call from
+                our experts or you can directly call us on the number below.
+                <br />
+                <br />
+                Contact number: +1(786)297-2927
+              </p>
+            </div>
+
+            <div class="faq-divider"></div>
+          </div>
+
+          <div class="faq">
+            <div class="faq-question">
+              <p>Can I request that the shipping be discreet?</p>
+              <span>+</span>
+            </div>
+            <div class="faq-answer faq-answer-hide">
+              <p>
+                As a matter of fact, you don’t even have to ask. Packages we
+                send within the United States will not have the content
+                indicated on the labels. However, for international orders, we
+                may have to state the content by law.
+              </p>
+            </div>
+
+            <div class="faq-divider"></div>
+          </div>
+
+          <div class="faq">
+            <div class="faq-question">
+              <p>How fast can I expect results?</p>
+              <span>+</span>
+            </div>
+            <div class="faq-answer faq-answer-hide">
+              <p>
+                Take sildenafil at least 30 minutes, but no more than 4 hours,
+                before sexual activity (1 hour before is the most effective).
+              </p>
+            </div>
+
+            <div class="faq-divider"></div>
+          </div>
+
+          <div class="faq">
+            <div class="faq-question">
+              <p>Will your performance enhancement pill work?</p>
+              <span>+</span>
+            </div>
+            <div class="faq-answer faq-answer-hide">
+              <p>
+                That’s an absolute yes! Our large number of consumers can attest
+                to that. They even call it the “weekend pill”.
+              </p>
+            </div>
+
+            <div class="faq-divider"></div>
+          </div>
+
+          <div class="faq">
+            <div class="faq-question">
+              <p>How can I order ED pill?</p>
+              <span>+</span>
+            </div>
+            <div class="faq-answer faq-answer-hide">
+              <p>
+                We follow a quick and simple three-step
+                <br />
+                <br />
+                1. Process Fill out the <a href="#contact">consultation form</a>
+                <br />
+                2. Private consultation with our expert Discreet
+                <br />
+                3. Delivery to your home
+              </p>
+            </div>
+
+            <div class="faq-divider"></div>
+          </div>
+        </div>
+        <img class="faq-bg-image" src="/assets/question.png" alt="" />
+      </section>
+
+      <section class="contact-section">
+        <h3 class="heading" id="contact" data-aos="fade-up">
+          Order your pills today
+        </h3>
+        <p class="sub-heading" data-aos="fade-up">Consult Now</p>
+
+        <form
+          action="contact-form.php"
+          method="POST"
+          class="consult-form"
+          data-aos="zoom-in-up"
+        >
+          <label class="form-label" for="name">NAME</label>
+          <input
+            class="form-input"
+            type="text"
+            name="name"
+            id="name"
+            required
+          />
+
+          <label class="form-label" for="mobile">MOBILE</label>
+          <input
+            class="form-input"
+            type="tel"
+            name="mobile"
+            id="mobile"
+            required
+          />
+
+          <label class="form-label" for="medicine"
+            >MEDICINE <span>(OPTIONAL)</span></label
+          >
+          <select name="medicine" id="medicine" class="form-input">
+            <option value="" disabled selected>SELECT</option>
+            <option value="Viagra">Viagra</option>
+            <option value="Cialis">Cialis</option>
+            <option value="Levitra">Levitra</option>
+            <option value="Soma">Soma</option>
+            <option value="Tramadol">Tramadol</option>
+            <option value="Other">Other</option>
+          </select>
+
+          <button class="submit-button">SUBMIT</button>
+        </form>
+      </section>
+
+      <footer>USPHARMACY &copy; All Rights Reserved</footer>
+
+      <div class="pop-up-form">
+        <img class="form-close" src="/assets/delete-button.png" alt="" />
+        <h3 class="heading">Order your pills today</h3>
+        <!-- <p class="sub-heading">Consult Now</p> -->
+
+        <form action="contact-form.php" method="POST" class="consult-form">
+          <label class="form-label" for="name">NAME</label>
+          <input
+            class="form-input"
+            type="text"
+            name="name"
+            id="name"
+            required
+          />
+
+          <label class="form-label" for="mobile">MOBILE</label>
+          <input
+            class="form-input"
+            type="tel"
+            name="mobile"
+            id="mobile"
+            required
+          />
+
+          <label class="form-label" for="medicine"
+            >MEDICINE <span>(OPTIONAL)</span></label
+          >
+          <select name="medicine" id="medicine" class="form-input">
+            <option value="" disabled selected>SELECT</option>
+            <option value="Viagra">Viagra</option>
+            <option value="Cialis">Cialis</option>
+            <option value="Levitra">Levitra</option>
+            <option value="Soma">Soma</option>
+            <option value="Tramadol">Tramadol</option>
+            <option value="Other">Other</option>
+          </select>
+
+          <button class="submit-button">SUBMIT</button>
+        </form>
+      </div>
     </main>
+
+    <!-- <div class="call-us-container">
+      <div>
+        <p class="call-us-heading">CALL NOW!!!</p>
+        <a class="call-us-number" href="tel:+17862972927">+1(786)297-2927</a>
+      </div>
+      <img src="/assets/call-us-woman.png" alt="" />
+    </div> -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="/app.js"></script>
+    <!-- This code goes in the page where you need the cookie -->
+    <script>
+      _mpevt.push([
+        "USPharmacy.net._event",
+        "Trackingcookie",
+        "2ba0acc00226f74f5aed17a90772385a",
+        "1440",
+      ]);
+    </script>
   </body>
 </html>
