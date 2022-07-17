@@ -199,18 +199,24 @@ nav{
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
+  padding: 2rem;
 }
 
 .hero-heading{
   font-size: 7rem;
-  font-size: calc(3rem + 1vw);
+  font-size: calc(1rem + 1vw);
 }
 
 .hero-sub-heading{
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin: 0.8rem 0rem;
   margin-bottom: 1.8rem;
   margin-left: 2.2rem;
+  display: flex;
+}
+
+.hero-sub-two{
+  margin-left: 5rem;
 }
 
 
@@ -247,6 +253,11 @@ nav{
 .hero-image-container img{
   /* width: 700px; */
   width: calc(150px + 25vw);
+}
+
+.hero-form .consult-form{
+  width: 100%;
+  margin: 0rem;
 }
 
 @media(max-width: 1024px){

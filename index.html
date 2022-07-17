@@ -106,6 +106,9 @@
         </div>
       </nav>
       <div class="hero-section">
+        <div class="hero-image-container">
+          <img src="/assets/Banner.png" alt="doctor image" />
+        </div>
         <div class="hero-content">
           <h2 class="hero-heading">
             Enjoy the Best Sex of Your Life and Finish Like a Porn Star,
@@ -113,16 +116,54 @@
           </h2>
 
           <ul class="hero-sub-heading">
-            <li>Perform better at <strong>1 cent/dose</strong></li>
-            <li>Last as long as a Pornstar</li>
-            <li>100% online and discreet delivery</li>
-            <li>Free expert consultation</li>
+            <div class="hero-sub-one">
+              <li>Perform better at <strong>1 cent/dose</strong></li>
+              <li>Last as long as a Pornstar</li>
+            </div>
+            <div class="hero-sub-two">
+              <li>100% online and discreet delivery</li>
+              <li>Free expert consultation</li>
+            </div>
           </ul>
 
-          <a class="hero-button" href="#contact">CONSULT NOW</a>
-        </div>
-        <div class="hero-image-container">
-          <img src="/assets/Banner.png" alt="doctor image" />
+          <div class="hero-form">
+            <form action="contact-form.php" method="POST" class="consult-form">
+              <label class="form-label" for="name">NAME</label>
+              <input
+                class="form-input"
+                type="text"
+                name="name"
+                id="name"
+                required
+              />
+
+              <label class="form-label" for="mobile">MOBILE</label>
+              <input
+                class="form-input"
+                type="tel"
+                name="mobile"
+                id="mobile"
+                required
+              />
+
+              <label class="form-label" for="medicine"
+                >MEDICINE <span>(OPTIONAL)</span></label
+              >
+              <select name="medicine" id="medicine" class="form-input">
+                <option value="" disabled selected>SELECT</option>
+                <option value="Viagra">Viagra</option>
+                <option value="Cialis">Cialis</option>
+                <option value="Levitra">Levitra</option>
+                <option value="Soma">Soma</option>
+                <option value="Tramadol">Tramadol</option>
+                <option value="Other">Other</option>
+              </select>
+
+              <button class="submit-button">SUBMIT</button>
+            </form>
+          </div>
+
+          <!-- <a class="hero-button" href="#contact">CONSULT NOW</a> -->
         </div>
       </div>
 

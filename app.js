@@ -15,7 +15,7 @@ const slider = () => {
       <li>Free expert consultation</li>
       <li>Judgment - free care</li>
       `;
-    bannerImage.src = "/assets/Banner.png.png";
+    bannerImage.src = "/assets/Banner.png";
     activeSlide = true;
     sliderBtnOne.classList.add("active-button");
     sliderBtnTwo.classList.remove("active-button");
